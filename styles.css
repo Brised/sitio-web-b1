@@ -1,0 +1,319 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #e0f7f4, #ffffff);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Header principal */
+header {
+    background: linear-gradient(to right, #00c9a7, #00d4ff);
+    color: white;
+    padding: 2rem 3rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 201, 167, 0.3);
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #ffffffcc;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+    max-width: 900px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00a19d;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #00a19d;
+    color: white;
+}
+
+/* Secciones tipo tarjeta */
+section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 900px;
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+/* Títulos en secciones */
+section h2 {
+    color: #00bfa6;
+    font-size: 1.5rem;
+}
+
+section h2:hover {
+    color: #008c7d;
+}
+
+section h2 a {
+    text-decoration: none;
+    color: #00bfa6;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+section h2 a:hover {
+    color: #008c7d;
+    border-bottom: 2px solid #00bfa6;
+}
+
+section h3 {
+    color: #00695c; /* Turquesa oscuro */
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #004d40; /* Más oscuro */
+    padding-bottom: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+section h3:hover {
+    color: #004d40;
+}
+
+/* Imágenes dentro de secciones */
+section img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Listas dentro de sección (indentación) */
+section ul {
+    padding-left: 1.5rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ccf2f0;
+    border-radius: 10px;
+    color: #006b63;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Galería de videojuegos */
+.galeria-videojuegos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.galeria-videojuegos img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Formularios */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+    margin: 1.5rem auto;
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #00796b;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #00a19d;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #00d4ff;
+    outline: none;
+    box-shadow: 0 0 8px #00d4ffaa;
+}
+
+form textarea {
+    min-height: 120px;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to right, #00c9a7, #00d4ff);
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 1rem auto 0;
+    display: block;
+    max-width: 200px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(to right, #00a88a, #009ecc);
+}
+
+/* Textos */
+p {
+    text-align: justify;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    body {
+        padding: 1rem;
+    }
+
+    header,
+    nav ul,
+    section,
+    form,
+    footer {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .galeria-videojuegos img {
+        width: 45%;
+        max-width: 300px;
+    }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    .galeria-videojuegos {
+        gap: 0.5rem;
+    }
+
+    .galeria-videojuegos img {
+        width: 90%;
+        max-width: none;
+    }
+
+    form input[type="submit"] {
+        max-width: 100%;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (celulares pequeños) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    header,
+    nav ul,
+    section,
+    form,
+    footer {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+    }
+
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.1rem;
+    }
+
+    section h3 {
+        font-size: 1rem;
+    }
+}
+
+

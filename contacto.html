@@ -5,20 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="icon" href="images/icono_contacto.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header>
         <h1>Contacto</h1>
+
+        <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="videojuegos.html">Videojuegos</a></li>
+        </ul>
+    </nav>
+
     </header>
     <p>Envía tus sugerencias de reseñas usando el siguiente formulario:</p>
-    <form action="mensaje.html" method="get">
+    <form id="contactForm" method="get">
         <label>Nombre:<br><input type="text" name="nombre" required></label><br><br>
         <label>Email:<br><input type="email" name="email" required></label><br><br>
         <label>Sugerencia:<br><textarea name="mensaje" required></textarea></label><br><br>
         <input type="submit" value="Enviar">
-    </form>   
+    </form>
+
+    <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    alert('¡Tu mensaje ha sido enviado correctamente!');
+    form.reset(); 
+    });
+    </script>
+    
 <footer>
-    <p><a href="index.html">Volver a Inicio</a></p>
+    <p>&copy; 2025 Sitio de Reseñas - Segundo bimestre.</p>
 </footer>
     
 </body>
