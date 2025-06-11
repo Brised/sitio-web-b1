@@ -230,7 +230,6 @@ footer p {
     text-align: center;
 }
 
-/* Media query para pantallas medianas (tablets) */
 @media (max-width: 1024px) {
     body {
         padding: 1rem;
